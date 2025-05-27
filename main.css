@@ -1,1 +1,47 @@
 /* STYLE FOR YOU MAIN.HTML */
+@font-face {
+    font-family: title_font;
+    src: url(assets/firlefanz-demo.ttf);
+}
+@font-face {
+    font-family: header_font;
+    src: url(assets/thequickest.otf);
+}
+@font-face {
+    font-family: paragraph_font;
+    src: url(assets/goingtodogreatthings.ttf);
+}
+
+body{
+    background-color: rgb(232, 221, 182);
+}
+
+.title{
+    font-family: title_font;
+     color: rgb(59, 46, 1);
+     text-align: center;
+}
+
+.flex-tile1{
+    background-color: rgb(222, 210, 166);
+}
+
+.flex-tile2{
+    background-color: rgb(222, 210, 166);
+}
+
+.flex-tile3{
+    background-color: rgb(222, 210, 166);
+}
+
+.headers{
+    font-family: header_font;
+    color: rgb(79, 64, 10);
+    text-align: center;
+}
+
+.description{
+    font-family: paragraph_font;
+    color: rgb(79, 64, 10);
+    text-align: center;
+}
