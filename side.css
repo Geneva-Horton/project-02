@@ -1,24 +1,38 @@
 @font-face {
     font-family: title_font;
-    src: url(assets/firlefanz-demo.ttf);
+    src: url(assets/fonts/firlefanz-demo.ttf);
 }
 @font-face {
     font-family: subtitle_font;
-    src: url(assets/thequickest.otf);
+    src: url(assets/fonts/thequickest.otf);
 }
 @font-face {
     font-family: paragraph_font;
-    src: url(assets/goingtodogreatthings.ttf);
+    src: url(assets/fonts/goingtodogreatthings.ttf);
 }
 
 body{
-    background-color: rgb(232, 221, 182);
+    background-image: url(assets/images/paper\ background.jpg);
+    border: 3px dashed rgb(59, 46, 1);
+}
+
+.title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
 }
 
 .title{
     font-family: title_font;
      color: rgb(59, 46, 1);
      text-align: center;
+     background-image: url(assets/images/cookbook_frame-removebg-preview.png);
+     background-size: cover;
+     width: 450px;
+     height: 300px;
+     padding-top: 90px;
+
 }
 
 .subtitle{
@@ -27,17 +41,149 @@ body{
     text-align: center;
 }
 
-.flex-tile{
-    background-color: rgb(222, 210, 166);
-}
-
 .headers{
     font-family: subtitle_font;
     color: rgb(79, 64, 10);
     text-align: center;
+    margin-top: 60px;
+}
+
+.author{
+    font-family: paragraph_font;
+    color: rgb(79, 64, 10);
 }
 
 .steps{
     font-family: paragraph_font;
     color: rgb(79, 64, 10);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.flex-tile1{
+    background-image: url(assets/images/recipe\ card.jpg);
+    filter: drop-shadow(10px 10px 5px rgba(59, 46, 1, 0.616));
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 81%;
+    padding: 20px;
+    border: 1px solid rgb(59, 46, 1);
+}
+
+.muffin{
+    width: 200px;
+    border: 3px dotted rgb(59, 46, 1);
+    margin-bottom: 60px;
+}
+
+.turtle{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: turtle 10s infinite;
+    animation-direction: alternate-reverse;
+}
+
+.flex-tile2{
+    background-image: url(assets/images/recipe\ card\ 2.jpg);
+    filter: drop-shadow(10px 10px 5px rgba(59, 46, 1, 0.616));
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 81%;
+    padding: 20px;
+    border: 1px solid rgb(59, 46, 1);
+}
+
+.tart{
+    width: 200px;
+    border: 3px dotted rgb(59, 46, 1);
+    margin-bottom: 60px;
+}
+
+.manatee{
+    margin-top: 20px;
+    width: 300px;
+    position: relative;
+    animation: manatee 10s infinite;
+    animation-direction: alternate-reverse;
+}
+
+.flex-tile3{
+    background-image: url(assets/images/recipe\ card.jpg);
+    filter: drop-shadow(10px 10px 5px rgba(59, 46, 1, 0.616));
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 81%;
+    padding: 20px;
+    border: 1px solid rgb(59, 46, 1);
+}
+
+.pasta{
+    width: 225px;
+    border: 3px dotted rgb(59, 46, 1);
+    margin-bottom: 60px;
+}
+
+.flex-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frog{
+    margin-bottom: 10px;
+    background: none;
+    border: 3px dotted rgb(59, 46, 1);
+    border-radius: 30px;
+    width: 7vw;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.take_me_home{
+    font-family: paragraph_font;
+    color:  rgb(79, 64, 10);
+    text-align: center;
+    font-size: 18px;
+}
+
+.frog:hover{
+    width: 10vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes turtle {
+    0%{
+        left: 0%;
+    }
+
+    100%{
+        left: 83%;
+    }
+}
+
+@keyframes manatee {
+    0%{
+        left: 0%;
+    }
+
+    100%{
+        left: 83%;
+    }
 }

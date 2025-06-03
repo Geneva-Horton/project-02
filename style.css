@@ -1,72 +1,200 @@
 /* STYLE FOR YOUR INDEX.HTML */
 @font-face {
     font-family: title_font;
-    src: url(assets/firlefanz-demo.ttf);
+    src: url(assets/fonts/firlefanz-demo.ttf);
 }
 @font-face {
     font-family: subtitle_font;
-    src: url(assets/thequickest.otf);
+    src: url(assets/fonts/thequickest.otf);
 }
 @font-face {
     font-family: paragraph_font;
-    src: url(assets/goingtodogreatthings.ttf);
+    src: url(assets/fonts/goingtodogreatthings.ttf);
 }
 
 body{
-    background-color: rgb(232, 221, 182);
-}
-
-.flex-container1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-image: url(assets/images/leafy\ background.jpg);
 }
 
 .flex-tile1{
-    display: flex;
+    display: block;
     width: 100%;
-    background-color: rgb(222, 210, 166);
+    margin-bottom: 10px;
+
+    background-color: rgb(159, 166, 119);
+    border: 2px dashed rgb(79, 64, 10);
+    border-radius: 10px;
 }
 
 .resources{
     font-family: paragraph_font;
+    text-align: left;
+    font-size: 20px;
     color: rgb(79, 64, 10);
 }
 
-.title{
-    font-family: title_font;
-    font-size: 50px;
-    margin-left: 30%;
-    text-align: center;
-    color: rgb(59, 46, 1);
-}
-
-.subtitle{
-    font-family: subtitle_font;
-    text-align: center;
-    color: rgb(79, 64, 10);
+a{
+    text-decoration: none;
 }
 
 .flex-container2{
     display: flex;
+    width: 100%;
+    height: 45%;
     flex-direction: column;
     align-items: center;
 }
+
 .flex-tile2{
-    display: flex;
-    width: 50%;
-    background-color: rgb(222, 210, 166);
+    display: block;
+    width: fit-content;
+    margin-bottom: 10px;
+
+    background-image: url(assets/images/scroll_paper-removebg-preview.png);
+    background-size: cover;
+    height: 200px;
+    width: 600px;
 }
-.link_1{
-    font-family: paragraph_font;
+
+.title{
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    font-family: title_font;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(59, 46, 1);
+    font-size: 40px;
+}
+
+
+.flex-tile2-1{
+    display: block;
+    width: fit-content;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    background-color: rgb(159, 166, 119);
+    border: 2px dashed rgb(79, 64, 10);
+    border-radius: 10px;
+}
+
+.subtitle{
+    font-family: subtitle_font;
+    font-size: 30px;
+    text-align: center;
     color: rgb(79, 64, 10);
+}
+
+.flex-container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link_box{
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+}
+
+.link_1{
+    display: flex;
+    padding: 15px 30px;
+    margin: 5% auto;
+    width: 160px;
+    border: 3px dotted;
+    border-radius: 30px;
+    background: rgb(206, 209, 188);
+    font-family: paragraph_font;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(79, 64, 10);
+    transition: all 0.5s;
+}
+.link_1:hover{
+    background: rgb(206, 209, 188);
+    color:  rgb(79, 64, 10);
+    border: 3px solid rgb(79, 64, 10);
+    border-style: solid;
+    font-size: 24px;
+
+    cursor: pointer;
 }
 .link_2{
+    display: flex;
+    padding: 15px 30px;
+    margin: 5% auto;
+    width: 120px;
+    border: 3px dotted;
+    border-radius: 30px;
+    background: rgb(206, 209, 188);
     font-family: paragraph_font;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
     color: rgb(79, 64, 10);
+    transition: all 0.5s;
+}
+.link_2:hover{
+    background: rgb(206, 209, 188);
+    color:  rgb(79, 64, 10);
+    border: 3px solid rgb(79, 64, 10);
+    border-style: solid;
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex-tile3{
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+
+.flex-tile3-1{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.poster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.herbal_poster{
+    align-items: center;
+    border: 10px solid  rgb(79, 64, 10);
+    border-radius: 10px;
+}
+
+.flex-container4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.flex-tile4-1{
+    display: block;
+    width: 50%;
+    background-color: rgb(159, 166, 119);
+    border: 2px dashed rgb(79, 64, 10);
+    border-radius: 10px;
 }
 .description{
     font-family: paragraph_font;
+    font-size: 20px;
     text-align: center;
+    padding: 0px 10px;
+    margin-top: 10px;
     color: rgb(79, 64, 10);
 }

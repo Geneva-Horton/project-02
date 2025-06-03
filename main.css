@@ -1,47 +1,223 @@
 /* STYLE FOR YOU MAIN.HTML */
 @font-face {
     font-family: title_font;
-    src: url(assets/firlefanz-demo.ttf);
+    src: url(assets/fonts/firlefanz-demo.ttf);
 }
 @font-face {
-    font-family: header_font;
-    src: url(assets/thequickest.otf);
+    font-family: subtitle_font;
+    src: url(assets/fonts/thequickest.otf);
 }
 @font-face {
     font-family: paragraph_font;
-    src: url(assets/goingtodogreatthings.ttf);
+    src: url(assets/fonts/goingtodogreatthings.ttf);
 }
 
 body{
-    background-color: rgb(232, 221, 182);
+    background-image: url(assets/images/foraging\ background.jpg);
+}
+
+.flyagaric{
+    position: fixed;
+    width: 300px;
+    top: 10px;
+    left: 10px;
+}
+
+.flyagaric:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.chanterelle{
+    position: fixed;
+    width: 300px;
+    top: 10px;
+    right: 10px;
+}
+
+.chanterelle:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.title-container{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.background-container{
+    background-image: url(assets/images/scroll_paper-removebg-preview.png);
+    background-size: cover;
+    height: 200px;
+    width: 600px;
 }
 
 .title{
+    display: block;
     font-family: title_font;
-     color: rgb(59, 46, 1);
+    font-size: 40px;
+     color: rgb(56, 56, 56);
      text-align: center;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-top: 20px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .flex-tile1{
-    background-color: rgb(222, 210, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: rgb(56, 56, 56); */
+    border: 1px dashed rgb(243, 231, 212);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    animation: background1 5s infinite;
+}
+
+.plants{
+    width: 50%;
+    
 }
 
 .flex-tile2{
-    background-color: rgb(222, 210, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    border: 1px dashed rgb(243, 231, 212);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    animation: background2 5s infinite;
+}
+
+.flex-container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .flex-tile3{
-    background-color: rgb(222, 210, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+    border: 1px dashed rgb(243, 231, 212);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .headers{
-    font-family: header_font;
-    color: rgb(79, 64, 10);
+    font-family: subtitle_font;
+    font-size: 30px;
+    color: rgb(243, 231, 212);
     text-align: center;
 }
 
 .description{
     font-family: paragraph_font;
-    color: rgb(79, 64, 10);
+    color: rgb(243, 231, 212);
+    font-size: 20px;
     text-align: center;
+}
+
+.flex-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sunflower{
+    padding: 0;
+    margin-bottom: 10px;
+    background: none;
+    border: 3px dotted rgb(243, 231, 212);
+    border-radius: 30px;
+    width: 15vw;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.return{
+    font-family: paragraph_font;
+    color: rgb(243, 231, 212);
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 1px;
+    background-color: rgb(56, 56, 56);
+    border: 1px solid rgb(243, 231, 212);
+    border-radius: 10px;
+}
+
+.sunflower:hover{
+    width: 20vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes background1{
+    0%{
+        background-color: rgb(49, 46, 57);
+    }
+
+    50%{
+        background-color: rgb(52, 57, 46);
+    }
+
+    100%{
+        background-color: rgb(49, 46, 57);
+    }
+}
+
+@keyframes background2{
+    0%{
+        background-color: rgb(61, 55, 45);
+    }
+
+    50%{
+        background-color: rgb(49, 43, 50);
+    }
+
+    100%{
+        background-color: rgb(61, 55, 45);
+    }
 }

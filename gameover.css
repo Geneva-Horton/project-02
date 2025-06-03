@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+}
+
+.gameover{
+    margin-top: 5%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 10%;
+}
+
+.link_box{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    background-color: black;
+}
+
+.yes_1{
+    display: flex;
+    background: black;
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+
+.yes_1:hover{
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.yes_2{
+    display: flex;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+.yes_2:hover{
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.flex-tile3{
+    display: flex;
+    justify-content: left;
+    width: 50%;
+}
+
+.flex-tile3-1{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}

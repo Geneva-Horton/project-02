@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(233, 103, 123);
+}
+
+.bigboi{
+    background-color: rgb(255, 210, 216);
+    border: 10px dotted rgb(227, 124, 40);
+}
+
+.flex-container0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.treasure{
+    position: absolute;
+    top: 63vh;
+    left: 10vw;
+}
+
+.coins{
+    position: absolute;
+    width: 300px;
+    top: 78vh;
+    right: 10vw;
+}
+
+.flex-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quit{
+    display: flex;
+    background: rgb(233, 103, 123);
+    transition: all 0.5s;
+    margin-right: 10px;
+    border: 3px dashed rgb(0, 0, 0);
+}
+
+.quit:hover{
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
